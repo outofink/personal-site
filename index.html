@@ -1,1 +1,64 @@
-Hello World
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <style>
+      .txt {
+        font-family: 'Roboto';
+        font-size: 108px;
+        color:#fafafa;
+        text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
+        text-align:center;
+      }
+      body {
+      background-image: url("pattern.png");
+
+      }
+      #small {
+      margin-top: 10px;
+       font-size:24px;
+       text-shadow: .5px .5px 2px rgba(255,255,255,0.3);
+      }
+      #smaller {
+      margin-top: 75px;
+       font-size:18px;
+       text-shadow: .5px .5px 2px rgba(255,255,255,0.3);
+      }
+      #smallest {
+      margin-top: -15px;
+       font-size:12px;
+       text-shadow: .3px .3px 1px rgba(255,255,255,0.3);
+      }
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 15px;
+    padding: 5px;
+    width: 275px;
+    margin: 10px auto;
+    margin-bottom: 15px;         
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+}
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;    
+}
+.blue span {background-color:#fafafa}
+    </style>
+  </head>
+  <body>
+    <div class="txt">Hey.</div>
+    <div class="txt" id='small'>This site isn't finished yet. </div>
+    <div class="txt" id='smaller'>This is how much is done:</div>
+
+<div class="progress-bar blue">
+  <span style="width: 3%"></span>
+    <div class="txt" id='smallest'>Beginning to ponder where to even begin.</div>
+</div>
+
+  </body>
+</html>
